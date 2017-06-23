@@ -5,5 +5,6 @@ npm install "grunt-babel" --save-dev
 npm install "grunt-contrib-cssmin" --save-dev
 npm install "grunt-contrib-uglify" --save-dev
 npm install "grunt-contrib-jshint" --save-dev
+npm install "grunt-typescript" --save-dev
 
 

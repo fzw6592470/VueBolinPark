@@ -46,8 +46,8 @@ module.exports = function(grunt){
                 },
                 files : {
                     "src/css/base.css" : "src/css/base.scss",
-                    "src/css/parking.css" : "src/css/parking.scss",
-                    "src/css/auto.css" : "src/css/auto.scss"
+                    //"src/css/parking.css" : "src/css/parking.scss",
+                    //"src/css/auto.css" : "src/css/auto.scss"
                 }
             }
         },
@@ -142,7 +142,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-typescript');
 
     grunt.registerTask('default', ['babel','uglify','cssmin','htmlmin']);
-    grunt.registerTask('build',['htmlmin']);
+    grunt.registerTask('build',['sass']);
     grunt.registerTask('ys',['htmlmin','uglify','sass','cssc','cssmin']);
     // grunt.registerTask('foo','This is test foo',function(){
     //     grunt.log.writeln("start foo task.");
